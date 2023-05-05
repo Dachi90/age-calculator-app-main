@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Manrope:wght@800&family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+:root {
+	/* Primary */
+	--purple: hsl(259, 100%, 65%);
+	--light-red: hsl(0, 100%, 67%);
+
+	/* Neutral */
+	--white: hsl(0, 0%, 100%);
+	--off-white: hsl(0, 0%, 94%);
+	--light-grey: hsl(0, 0%, 86%);
+	--smokey-grey: hsl(0, 1%, 44%);
+	--off-black: hsl(0, 0%, 8%);
+
+	/* Typography */
+	font-size: 32px;
+	font-family: 'Poppins';
+}
+
+/* Inputs section*/
+.input-section {
+	display: flex;
+}
+
+.input-section article {
+	width: 33%;
+}
+
+.input-section input {
+	margin-left: 5px;
+	width: 80%;
+}
+
+/* Arrow section */
+.arrow-section {
+	display: flex;
+	align-items: center;
+}
+
+.arrow-section hr {
+	border-top: 3px solid var(--light-grey);
+	width: 40%;
+	height: 1px;
+}
+.arrow-section img {
+	background-color: var(--purple);
+	border-radius: 50%;
+	padding: 0.3rem;
+}
+
+/* Footer */
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
