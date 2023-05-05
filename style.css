@@ -16,6 +16,18 @@
 	font-family: 'Poppins';
 }
 
+.container {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	height: 70vh;
+	width: 80vw;
+	background-color: var(--white);
+	border: 1px solid var(--smokey-grey);
+	border-radius: 10px 10px 100px 10px;
+	padding: 0.5rem;
+}
+
 /* Inputs section*/
 .input-section {
 	display: flex;
@@ -23,17 +35,40 @@
 
 .input-section article {
 	width: 33%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.input-section span {
+	align-self: flex-start;
+	color: var(--smokey-grey);
+	font-size: 16px;
+	margin-left: 0.3rem;
+}
+
+.input-section div {
+	border: 1px solid var(--light-grey);
+	border-radius: 10px;
+	width: 85px;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .input-section input {
-	margin-left: 5px;
 	width: 80%;
+	border: none;
+	font-size: 24px;
+	font-family: 'Poppins';
 }
 
 /* Arrow section */
 .arrow-section {
 	display: flex;
 	align-items: center;
+	padding: 1rem 0rem;
 }
 
 .arrow-section hr {
@@ -47,10 +82,30 @@
 	padding: 0.3rem;
 }
 
+/* Counter section */
+
+.counter-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-grow: 1;
+	gap: 10px;
+}
+
+.counter-section p {
+	margin: 0;
+}
+
+.counter-section span {
+	color: var(--purple);
+}
+
 /* Footer */
 .attribution {
 	font-size: 11px;
 	text-align: center;
+	position: fixed;
+	bottom: 0px;
 }
 .attribution a {
 	color: hsl(228, 45%, 44%);
