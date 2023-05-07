@@ -16,84 +16,82 @@
 	font-family: 'Poppins';
 }
 
-.container {
-	display: flex;
-	flex-direction: column;
-	margin: auto;
-	height: 70vh;
-	width: 80vw;
-	background-color: var(--white);
-	border: 1px solid var(--smokey-grey);
-	border-radius: 10px 10px 100px 10px;
-	padding: 0.5rem;
+* {
+	box-sizing: border-box;
+	margin: 0;
 }
 
-/* Inputs section*/
+body {
+	min-height: 100vh;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 25% 20% 55%;
+	grid-template-areas:
+		'inputs  inputs  inputs'
+		'arrow   arrow   arrow'
+		'counter counter counter';
+	min-height: 70vh;
+}
+
+/* input section */
 .input-section {
+	grid-area: inputs;
 	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
 
 .input-section article {
-	width: 33%;
 	display: flex;
 	flex-direction: column;
-	align-items: flex-end;
-}
-
-.input-section span {
-	align-self: flex-start;
+	font-size: 12px;
 	color: var(--smokey-grey);
-	font-size: 16px;
-	margin-left: 0.3rem;
 }
 
-.input-section div {
+.input-section input {
+	width: 75px;
+	height: 40px;
 	border: 1px solid var(--light-grey);
-	border-radius: 10px;
-	width: 85px;
-	height: 60px;
+	border-radius: 5px;
+	font-size: 24px;
+	font-weight: 700;
+	padding: 10px;
+}
+
+/* arrow section */
+.arrow-section {
+	grid-area: arrow;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.input-section input {
-	width: 80%;
-	border: none;
-	font-size: 24px;
-	font-family: 'Poppins';
-}
-
-/* Arrow section */
-.arrow-section {
-	display: flex;
-	align-items: center;
-	padding: 1rem 0rem;
-}
-
 .arrow-section hr {
-	border-top: 3px solid var(--light-grey);
-	width: 40%;
-	height: 1px;
+	margin: 0;
+	width: 50%;
+	height: 3px;
+	background-color: var(--light-grey);
 }
+
 .arrow-section img {
 	background-color: var(--purple);
 	border-radius: 50%;
 	padding: 0.3rem;
 }
 
-/* Counter section */
-
+/* counter section */
 .counter-section {
+	font-size: 50px;
+	font-weight: bold;
+	grid-area: counter;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	flex-grow: 1;
-	gap: 10px;
-}
-
-.counter-section p {
-	margin: 0;
+	gap: 0.5rem;
+	padding-left: 1rem;
 }
 
 .counter-section span {
