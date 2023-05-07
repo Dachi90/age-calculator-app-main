@@ -6,6 +6,7 @@
 		<!-- displays site properly based on user's device -->
 
 		<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+		<link rel="stylesheet" href="normalize.css" />
 		<link rel="stylesheet" href="style.css" />
 
 		<title>Frontend Mentor | Age calculator app</title>
@@ -15,20 +16,20 @@
 			<section class="input-section">
 				<article class="input-day-article">
 					<span>DAY</span>
-
 					<input type="text" />
+					<p class="error dayError"></p>
 				</article>
 
 				<article class="input-month-article">
 					<span>MONTH</span>
-
 					<input type="text" id="input-month" />
+					<p class="error monthError"></p>
 				</article>
 
 				<article class="input-year-article">
 					<span>YEAR</span>
-
 					<input type="text" id="input-year" />
+					<p class="error yearError"></p>
 				</article>
 			</section>
 
