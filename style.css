@@ -59,13 +59,39 @@ body {
 }
 
 .input-section input {
-	width: 75px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 90px;
 	height: 40px;
 	border: 1px solid var(--light-grey);
 	border-radius: 5px;
-	font-size: 24px;
+	font-size: 18px;
 	font-weight: 700;
 	padding: 10px;
+	cursor: pointer;
+}
+
+.input-section input:focus-visible {
+	outline: 1px solid var(--purple);
+}
+
+.error {
+	visibility: hidden;
+	color: var(--light-red);
+	font-size: 12px;
+	font-style: italic;
+}
+
+.visible {
+	visibility: visible;
+}
+
+.border-error {
+	outline: 1px solid var(--light-red);
+}
+
+.color-error {
+	color: var(--light-red);
 }
 
 /* arrow section */
@@ -88,6 +114,11 @@ body {
 	background-color: var(--purple);
 	border-radius: 50%;
 	padding: 0.3rem;
+	cursor: pointer;
+}
+
+.arrow-section img:hover {
+	background-color: var(--off-black);
 }
 
 /* counter section */
@@ -120,7 +151,11 @@ body {
 
 @media (min-width: 700px) {
 	.container {
-		width: 50vw;
+		width: 60vw;
+	}
+
+	.input-section input {
+		width: 120px;
 	}
 }
 
@@ -130,8 +165,13 @@ body {
 	}
 
 	.input-section {
-		width: 65%;
+		width: 100%;
 	}
+
+	.input-section input {
+		width: 150px;
+	}
+
 	.arrow-section img {
 		position: relative;
 	}
