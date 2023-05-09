@@ -16,34 +16,36 @@
 			<section class="input-section">
 				<article class="input-day-article">
 					<span>DAY</span>
-					<input class="input" type="text" placeholder="DD" />
+					<input class="input-day" type="number" min="1" max="31" placeholder="DD" />
 					<p class="error dayError">This field is required</p>
 				</article>
 
 				<article class="input-month-article">
 					<span>MONTH</span>
-					<input type="text" id="input-month" placeholder="MM" />
+					<input class="input-month" type="number" min="1" max="12" id="input-month" placeholder="MM" />
 					<p class="error monthError">This field is required</p>
 				</article>
 
 				<article class="input-year-article">
 					<span>YEAR</span>
-					<input type="text" id="input-year" placeholder="YYYY" />
+					<input class="input-year" type="number" id="input-year" placeholder="YYYY" />
 					<p class="error yearError">This field is required</p>
 				</article>
 			</section>
 
 			<section class="arrow-section">
 				<hr />
-				<img src="./assets/images/icon-arrow.svg" alt="arrow image" />
+				<img src="./assets/images/icon-arrow.svg" alt="arrow image" class="submit" />
 			</section>
 
 			<section class="counter-section">
-				<p><span>- -</span> years</p>
-				<p><span>- -</span> months</p>
-				<p><span>- -</span> days</p>
+				<p><span class="span-year">- -</span> years</p>
+				<p><span class="span-month">- -</span> months</p>
+				<p><span class="span-day">- -</span> days</p>
 			</section>
 		</div>
 		<footer class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.</footer>
+
+		<script src="index.js"></script>
 	</body>
 </html>
