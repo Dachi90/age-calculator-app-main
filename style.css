@@ -134,7 +134,13 @@ body {
 }
 
 .counter-section span {
+	display: inline-block;
 	color: var(--purple);
+	transition: transform 2s cubic-bezier(0.13, 0.86, 0.74, 1.18);
+}
+
+.rotation {
+	transform: rotateY(360deg);
 }
 
 /* Footer */

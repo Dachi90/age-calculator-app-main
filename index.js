@@ -106,8 +106,15 @@ const calculateAge = () => {
 	$DaySpan.innerHTML = dayDiff;
 };
 
+const rotationY = () => {
+	$YearSpan.classList.toggle('rotation');
+	$MonthSpan.classList.toggle('rotation');
+	$DaySpan.classList.toggle('rotation');
+};
+
 $Submit.addEventListener('click', () => {
 	if (emptyInputs() && maxDayInput() && maxMonthInput() && maxYearInput()) {
+		rotationY();
 		calculateAge();
 	}
 });
